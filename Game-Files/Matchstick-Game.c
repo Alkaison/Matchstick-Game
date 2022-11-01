@@ -7,9 +7,12 @@ void welcomescreen(void);
 void menu(void);
 void player(void);
 void computer(void);
-void scoreboard(void);
-void highscore(void);   
+void playground1(void);
+void playground2(void);
+void endscreen(void);
 void cleaner(void);
+
+int sticks, player1, machine, player2;
 
 int main(){
 
@@ -35,8 +38,37 @@ void welcomescreen(){
 }
 
 void menu(){
+
     cleaner();
-    printf("Welcome to Menu");
+    int input=0;
+
+lable1:
+    printf("-----------------------------------------\n");
+    printf(">>> Select your choice <<< \n");
+    printf("-----------------------------------------\n\n");
+    printf("> 1. Player vs Computer \n");
+    printf("> 2. Player vs Player \n");
+    printf("> 3. Exit Game \n");
+
+    printf("> Enter the number & hit ENTER: ");
+    scanf("%d",&input);
+
+    switch(input)
+    {
+        case 1:
+            playground1();
+            break;
+        case 2:
+            playground2();
+            break;
+        case 3:
+            endscreen();
+            break;
+        default:
+            printf("Invalid Input, Press any key to continue... \n");
+            getch();
+            goto lable1;
+    }
 }
 
 void player(){
@@ -47,15 +79,19 @@ void computer(){
 
 }
 
-void scoreboard(){
+void playground1(){
 
 }
 
-void highscore(){
-    
+void playground2(){
+
 }
 
 void cleaner(){
     system("cls");
     fflush(stdin);
+}
+
+void endscreen(){
+
 }
