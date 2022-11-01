@@ -6,7 +6,7 @@
 int sticks=21, player1=0, computer=0, player2=0;
     const int MIN = 1;
     const int MAX = 4;
- 
+
 void welcomescreen(void);
 void menu(void);
 void playground1(void);
@@ -89,18 +89,19 @@ void playground1(){
     printf(">>> Player V/s Computer <<< \n");
     printf("----------------------------\n\n");
 
+    while(sticks > 0){
 label2:
-    printf("\nNumber of Match Sticks left: %d \n", sticks);
-    printf("Pick between 1 to 4 sticks: ");
-    scanf("%d",&player1);
-    fflush(stdin);
-    if(player1 > 4 || player1 < 1 || player1 >= sticks)
-    {
-        printf("\nError (%d): Invalid Input. \n", player1);
-        goto label2;
-    }
-    else
-    {
+        printf("\nNumber of Match Sticks left: %d \n", sticks);
+        printf("Pick between 1 to 4 sticks: ");
+        scanf("%d",&player1);
+        fflush(stdin);
+
+        if(player1 > 4 || player1 < 1 || player1 >= sticks)
+        {
+            printf("\nError (%d): Invalid Input. \n", player1);
+            goto label2;
+        }
+
         sticks -= player1;
         if(sticks == 1)
         {
@@ -126,11 +127,7 @@ label3:
         printf("Computer picked: %d \n", computer);
         sticks -= computer;
 
-        if(sticks > 1)
-        {
-            goto label2;
-        }
-        else if(sticks == 1)
+        if(sticks == 1)
         {
             sticks = 21;
             printf("\nYou Picked the Last Stick! \n\n");
@@ -219,6 +216,8 @@ void playground3(){
     printf(">>> Player V/s A.I. <<< \n");
     printf("------------------------\n\n");
 
+    while(sticks > 0)
+    {
 label2:
     printf("\nNumber of Match Sticks left: %d \n", sticks);
     printf("Pick between 1 to 4 sticks: ");
@@ -229,8 +228,6 @@ label2:
         printf("\nError (%d): Invalid Input. \n", player1);
         goto label2;
     }
-    else
-    {
         sticks -= player1;
         if(sticks == 1)
         {
@@ -258,11 +255,7 @@ label3:
         printf("A.I. picked: %d \n", computer);
         sticks -= computer;
 
-        if(sticks > 1)
-        {
-            goto label2;
-        }
-        else if(sticks == 1)
+        if(sticks == 1)
         {
             sticks = 21;
             printf("\nYou Picked the Last Stick! \n\n");
