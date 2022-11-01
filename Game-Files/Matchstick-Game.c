@@ -21,6 +21,11 @@ int main(){
     return 0;
 }
 
+void cleaner(){
+    system("cls");
+    fflush(stdin);
+}
+
 void welcomescreen(){
 
     cleaner();
@@ -39,10 +44,10 @@ void welcomescreen(){
 
 void menu(){
 
-    cleaner();
     int input=0;
 
 lable1:
+    cleaner();
     printf("-----------------------------------------\n");
     printf(">>> Select your choice <<< \n");
     printf("-----------------------------------------\n\n");
@@ -72,26 +77,31 @@ lable1:
 }
 
 void player(){
-
+    printf("Player");
 }
 
 void computer(){
-
+    printf("Computer");
 }
 
 void playground1(){
-
+    printf("PlayGround 1");
 }
 
 void playground2(){
-
-}
-
-void cleaner(){
-    system("cls");
-    fflush(stdin);
+    printf("PlayGround 2");
 }
 
 void endscreen(){
+    
+    cleaner();
+    printf("----------------------------------------------\n");
+    printf(">>> Creator: @Alkaison (Ganesh Mourya) <<< \n");
+    printf("----------------------------------------------\n\n");
 
+    printf("> Github: https://github.com/Alkaison \n");
+    printf("> Twitter: https://twitter.com/Alkaison \n");
+    printf("> LinkedIn: https://www.linkedin.com/in/Alkaison \n\n");
+
+    exit(0);
 }
