@@ -4,7 +4,7 @@ You start with 21 Matchsticks each player picking up stick between 1 to 4 on his
 
 ## Description
 
-Matchstick Games has 3 gamemodes where you can play against computer, A.I. and your friend. Computer has 50-50 chance to win where as A.I. is impossible to defeat. Can you beat him ?
+Matchstick Game has 3 game modes where you can play against computer, A.I. and your friend. Computer has 50-50 chance to win where as A.I. is impossible to defeat. Can you beat him ?
 
 ### GameModes:
 
