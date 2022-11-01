@@ -3,10 +3,12 @@
 #include<conio.h>
 #include<time.h>
 
+// Global variables
 int sticks=21, player1=0, computer=0, player2=0;
     const int MIN = 1;
     const int MAX = 4;
 
+// Function prototypes
 void welcomescreen(void);
 void menu(void);
 void playground1(void);
@@ -22,11 +24,13 @@ int main(){
     return 0;
 }
 
+// Input Output stream clearence
 void cleaner(){
     system("cls");
     fflush(stdin);
 }
 
+// Introduction page for game rules
 void welcomescreen(){
 
     cleaner();
@@ -44,6 +48,7 @@ void welcomescreen(){
     getch();
 }
 
+// game mode selection switch
 void menu(){
 
     int input=0;
@@ -82,6 +87,7 @@ label1:
     }
 }
 
+// Player Vs Computer
 void playground1(){
     
     cleaner();
@@ -89,6 +95,7 @@ void playground1(){
     printf(">>> Player V/s Computer <<< \n");
     printf("----------------------------\n\n");
 
+    // repeats the code until the stick reduces to 1
     while(sticks > 0){
 label2:
         printf("\nNumber of Match Sticks left: %d \n", sticks);
@@ -103,6 +110,7 @@ label2:
         }
 
         sticks -= player1;
+        // checks for winning condition
         if(sticks == 1)
         {
             sticks = 21;
@@ -127,6 +135,7 @@ label3:
         printf("Computer picked: %d \n", computer);
         sticks -= computer;
 
+        // checks for winning condition
         if(sticks == 1)
         {
             sticks = 21;
@@ -141,6 +150,7 @@ label3:
     }
 }
 
+// Player Vs Player
 void playground2(){
 
     cleaner();
@@ -157,6 +167,7 @@ void playground2(){
     printf(">>> Player V/s Player <<< \n");
     printf("------------------------\n\n");
 
+    // repeats the code until the stick reduces to 1
     while(sticks > 0)
     {
         label4:
@@ -195,6 +206,7 @@ void playground2(){
         }
 
         sticks -= player2;
+        // checks for winning condition
         if(sticks == 1)
         {
             sticks = 21;
@@ -209,6 +221,7 @@ void playground2(){
     }
 }
 
+// Player Vs A.I.
 void playground3(){
 
     cleaner();
@@ -216,6 +229,7 @@ void playground3(){
     printf(">>> Player V/s A.I. <<< \n");
     printf("------------------------\n\n");
 
+    // repeats the code until the stick reduces to 1
     while(sticks > 0)
     {
 label2:
@@ -249,6 +263,7 @@ label3:
             goto label3;
         } */
 
+        // A.I. logic for picking up sticks
         computer = 5 - player1;
         
         printf("\nNumber of Match Sticks left: %d \n", sticks);
@@ -269,6 +284,7 @@ label3:
     }
 }
 
+// EndScreen Credits
 void endscreen(){
     
     cleaner();
