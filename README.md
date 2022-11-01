@@ -1,10 +1,52 @@
 # Matchstick-Game
 
-The rules of our game are simple. You start with 21 sticks, and two players take turns picking up 1, 2, 3, or 4 sticks. The player who takes the last stick loses.
+You start with 21 Matchsticks each player picking up stick between 1 to 4 on his turn. The player who picks the last stick loses the game.
 
-## NOTICE ⚠️
+## Description
 
-This is currently under development, you can check the latest commit to track the progress of the project.
+Matchstick Games has 3 gamemodes where you can play against computer, A.I. and your friend. Computer has 50-50 chance to win where as A.I. is impossible to defeat. Can you beat him ?
+
+### GameModes:
+
+- Player Vs Computer
+- Player Vs Player
+- Player Vs A.I.
+
+### Requirements for using it
+
+- A software (IDE) for reviewing the code
+- C/C++ compiler (Recommended: GCC Compiler)
+- Command Prompt or Windows Powershell
+
+## Screenshots 🖼️
+
+### 01. Game Rule Page
+
+![Matchstick-Game-1](https://github.com/Alkaison/Matchstick-Game/blob/main/Images/Matchstick-Game-1.png)
+
+### 02. Gamemode Selection
+
+![Matchstick-Game-2](https://github.com/Alkaison/Matchstick-Game/blob/main/Images/Matchstick-Game-2.png)
+
+### 03. Player Vs Computer
+
+![Matchstick-Game-3](https://github.com/Alkaison/Matchstick-Game/blob/main/Images/Matchstick-Game-3.png)
+
+### 04. Enter Player1 & Player2 Names
+
+![Matchstick-Game-4](https://github.com/Alkaison/Matchstick-Game/blob/main/Images/Matchstick-Game-4.png)
+
+### 05. Player Vs Player
+
+![Matchstick-Game-5](https://github.com/Alkaison/Matchstick-Game/blob/main/Images/Matchstick-Game-5.png)
+
+### 06. Player Vs A.I
+
+![Matchstick-Game-6](https://github.com/Alkaison/Matchstick-Game/blob/main/Images/Matchstick-Game-6.png)
+
+### 07. Exit Screen
+
+![Matchstick-Game-7](https://github.com/Alkaison/Matchstick-Game/blob/main/Images/Matchstick-Game-7.png)
 
 ## Contact me through 📨
 
