@@ -145,7 +145,71 @@ label3:
 }
 
 void playground2(){
-    printf("PlayGround 2");
+
+    cleaner();
+    char pname1[255], pname2[255];
+    printf("Enter Player-1 Name: ");
+    scanf("%s",&pname1);
+    fflush(stdin);
+
+    printf("Enter Player-2 Name: ");
+    scanf("%s",&pname2);
+
+    cleaner();
+    printf("------------------------\n");
+    printf(">>> Player V/s Player <<< \n");
+    printf("------------------------\n\n");
+
+    while(sticks > 0)
+    {
+        label4:
+        printf("\nNumber of Match Sticks left: %d \n", sticks);
+        printf("%s pick between 1 to 4: ",pname1);
+        scanf("%d",&player1);
+
+        if(player1 > 4 || player1 < 1 || player1 >= sticks)
+        {
+            printf("\nError (%d): Invalid Input. \n", player1);
+            goto label4;
+        }
+
+        sticks -= player1;
+        if(sticks == 1)
+        {
+            sticks = 21;
+            printf("\n%s Picked the Last Stick \n\n",pname2);
+            printf("-------------------\n");
+            printf(">>> %s Won <<< \n",pname1);
+            printf("-------------------\n\n");
+            printf("Press any key to continue... \n");
+            getch();
+            menu();
+        }
+
+        label5:
+        printf("\nNumber of Match Sticks left: %d \n", sticks);
+        printf("%s pick between 1 to 4: ",pname2);
+        scanf("%d",&player2);
+
+        if(player2 > 4 || player2 < 1 || player2 >= sticks)
+        {
+            printf("\nError (%d): Invalid Input. \n", player2);
+            goto label5;
+        }
+
+        sticks -= player2;
+        if(sticks == 1)
+        {
+            sticks = 21;
+            printf("\n%s Picked the Last Stick \n\n",pname1);
+            printf("-------------------\n");
+            printf(">>> %s Won <<< \n",pname2);
+            printf("-------------------\n\n");
+            printf("Press any key to continue... \n");
+            getch();
+            menu();
+        }
+    }
 }
 
 void playground3(){
