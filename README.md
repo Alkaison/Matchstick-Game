@@ -4,7 +4,7 @@ You start with 21 Matchsticks each player picking up stick between 1 to 4 on his
 
 ## Description
 
-Matchstick Game has 3 game modes where you can play against computer, A.I. and your friend. Computer has 50-50 chance to win where as A.I. is impossible to defeat. Can you beat him ?
+Matchstick Game has 3 game modes where you can play against computer, A.I. and your friend. Computer has 50-50 chance to win where as A.I. is impossible to defeat. Can you beat him ? Access the code files [here](Game-Files/Matchstick-Game.c "Matchstick Game").
 
 ### GameModes:
 
@@ -22,41 +22,31 @@ Matchstick Game has 3 game modes where you can play against computer, A.I. and y
 
 ### 01. Game Rule Page
 
-![Matchstick-Game-1](https://github.com/Alkaison/Matchstick-Game/blob/main/Images/Matchstick-Game-1.png)
+![Matchstick-Game-1](https://i.postimg.cc/L8JJpZcx/Matchstick-Game-1.png)
 
 ### 02. Gamemode Selection
 
-![Matchstick-Game-2](https://github.com/Alkaison/Matchstick-Game/blob/main/Images/Matchstick-Game-2.png)
+![Matchstick-Game-2](https://i.postimg.cc/K8CRv8Fx/Matchstick-Game-2.png)
 
 ### 03. Player Vs Computer
 
-![Matchstick-Game-3](https://github.com/Alkaison/Matchstick-Game/blob/main/Images/Matchstick-Game-3.png)
+![Matchstick-Game-3](https://i.postimg.cc/V6W6R9tk/Matchstick-Game-3.png)
 
 ### 04. Enter Player1 & Player2 Names
 
-![Matchstick-Game-4](https://github.com/Alkaison/Matchstick-Game/blob/main/Images/Matchstick-Game-4.png)
+![Matchstick-Game-4](https://i.postimg.cc/jjNCWYdN/Matchstick-Game-4.png)
 
 ### 05. Player Vs Player
 
-![Matchstick-Game-5](https://github.com/Alkaison/Matchstick-Game/blob/main/Images/Matchstick-Game-5.png)
+![Matchstick-Game-5](https://i.postimg.cc/PxjJYVP7/Matchstick-Game-5.png)
 
 ### 06. Player Vs A.I
 
-![Matchstick-Game-6](https://github.com/Alkaison/Matchstick-Game/blob/main/Images/Matchstick-Game-6.png)
+![Matchstick-Game-6](https://i.postimg.cc/3NLwMKnM/Matchstick-Game-6.png)
 
 ### 07. Exit Screen
 
-![Matchstick-Game-7](https://github.com/Alkaison/Matchstick-Game/blob/main/Images/Matchstick-Game-7.png)
-
-## Contact me through 📨
-
-[![Discord Server](https://github.com/gauravghongde/social-icons/blob/master/SVG/Color/Discord.svg)](https://discord.gg/dF4PHxbHpA)
-&ensp;
-[![LinkedIn Profile](https://github.com/gauravghongde/social-icons/blob/master/SVG/Color/LinkedIN.svg)](https://www.linkedin.com/in/alkaison)
-&ensp;
-[![MailID](https://github.com/Alkaison/GitBashDemo/blob/main/mail.svg)](mailto:505ganeshmourya@gmail.com)
-&ensp;
-[![Ko-Fi Profile](https://github.com/Alkaison/GitBashDemo/blob/main/donate.svg)](https://ko-fi.com/alkaison)
+![Matchstick-Game-7](https://i.postimg.cc/gjc0Bwyq/Matchstick-Game-7.png)
 
 ## Support 🧩
 
